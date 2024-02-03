@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnw0vucpnsjwu"]
+
+[ext_resource type="PackedScene" uid="uid://cj8l8qaossre8" path="res://Scenes/Player/player.tscn" id="1_m0mit"]
+[ext_resource type="Script" path="res://Scenes/Levels/level_base.gd" id="1_oqvuf"]
+[ext_resource type="PackedScene" uid="uid://djlgiygtwmape" path="res://Scenes/Levels/TileMapSource.tscn" id="2_dfsey"]
+
+[node name="Level_Base" type="Node2D"]
+script = ExtResource("1_oqvuf")
+
+[node name="Player" parent="." instance=ExtResource("1_m0mit")]
+
+[node name="TileMap" parent="." instance=ExtResource("2_dfsey")]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]

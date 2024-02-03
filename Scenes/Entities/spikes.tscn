@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj1qsfguimglo"]
+
+[ext_resource type="Script" path="res://Scenes/Entities/spikes.gd" id="1_oj84e"]
+[ext_resource type="Texture2D" uid="uid://cjbmlo6opxyf0" path="res://Assets/Tiles/tiles_packed.png" id="1_rul13"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfx22"]
+atlas = ExtResource("1_rul13")
+region = Rect2(144, 54, 18, 18)
+
+[node name="Spikes" type="Area2D"]
+script = ExtResource("1_oj84e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_jfx22")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-6, 0, -2, 0, 0, 6, 2, 0, 6, 0, 9, 9, -9, 9)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
