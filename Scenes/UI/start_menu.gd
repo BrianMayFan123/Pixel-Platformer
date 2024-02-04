@@ -1,6 +1,6 @@
 extends CenterContainer
 
-@onready var start_Menu_Button = $VBoxContainer/StartButton
+@onready var start_Menu_Button = $MarginContainer/VBoxContainer/StartButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
