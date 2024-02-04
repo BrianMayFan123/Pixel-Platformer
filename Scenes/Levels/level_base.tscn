@@ -11,4 +11,4 @@ script = ExtResource("1_oqvuf")
 
 [node name="TileMap" parent="." instance=ExtResource("2_dfsey")]
 
-[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]

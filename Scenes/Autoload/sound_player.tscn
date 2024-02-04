@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bii3akthro0xl"]
+
+[ext_resource type="Script" path="res://Scenes/Autoload/sound_player.gd" id="1_8gqma"]
+[ext_resource type="AudioStream" uid="uid://dlmar0ca8guuv" path="res://Assets/SFX/Hit_Hurt.wav" id="2_meaxj"]
+
+[node name="SoundPlayer" type="Node"]
+script = ExtResource("1_8gqma")
+
+[node name="AudioPlayers" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_meaxj")
+bus = &"Sound"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_meaxj")
+bus = &"Sound"
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_meaxj")
+bus = &"Sound"

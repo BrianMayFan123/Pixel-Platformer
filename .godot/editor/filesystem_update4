@@ -1,2 +1,11 @@
 res://Scenes/UI/start_menu.tscn
 res://Scenes/Levels/level_2.tscn
+res://Scenes/Levels/level_1.tscn
+res://Scenes/Player/player.tscn
+res://Scenes/Player/player.gd
+res://Scenes/Autoload/sound_player.tscn
+res://Scenes/Autoload/sound_player.gd
+res://Scenes/Entities/coin.tscn
+res://Scenes/Entities/coin.gd
+res://default_bus_layout.tres
+res://Scenes/Levels/level_base.tscn

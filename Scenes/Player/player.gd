@@ -10,7 +10,6 @@ const JUMP_VELOCITY = -350.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var animated_Sprite = $AnimatedSprite2D
-@onready var audio_Jump = $AudioStreamPlayer2D
 
 func _physics_process(delta):
 	
@@ -39,14 +38,16 @@ func apply_gravity(delta):
 func handle_jump():
 		if is_on_floor():
 			if Input.is_action_just_pressed("jump") and is_on_floor():
+				SoundPlayer.play_sound(SoundPlayer.JUMP)
 				velocity.y = JUMP_VELOCITY
-				audio_Jump.play()
 		else: 
 			if Input.is_action_just_released("jump") and velocity.y < JUMP_VELOCITY / 2:
 				velocity.y = JUMP_VELOCITY / 2
 
 func game_over():
+	SoundPlayer.play_sound(SoundPlayer.HURT)
 	get_tree().reload_current_scene()
+	
 
 func handle_animations(direction):
 	if direction != 0 :
