@@ -8,6 +8,7 @@ func _ready():
 
 
 func _on_start_button_pressed():
+	await(Transitions.play_fadeIn())
 	get_tree().change_scene_to_file("res://Scenes/Levels/level_1.tscn")
 
 

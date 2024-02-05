@@ -51,4 +51,4 @@ move_direction = Vector2(2.08165e-12, -100)
 
 [node name="BackgroundMusic" parent="." index="11"]
 stream = ExtResource("7_6vt4b")
-volume_db = -20.0
+volume_db = -26.559

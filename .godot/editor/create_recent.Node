@@ -1,2 +1,5 @@
-AudioStreamPlayer
+CanvasLayer
+AnimationPlayer
+ColorRect
 Node
+AudioStreamPlayer

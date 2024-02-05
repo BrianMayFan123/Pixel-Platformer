@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 SoundPlayer="*res://Scenes/Autoload/sound_player.tscn"
+Transitions="*res://Scenes/Autoload/transitions.tscn"
 
 [display]
 
